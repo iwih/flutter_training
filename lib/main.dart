@@ -7,8 +7,10 @@ void main() {
     title: "TestApp",
     home: Scaffold(
       appBar: AppBar(title: Text("TestApp")),
-      body: Category(null, "test cat.", Colors.deepOrangeAccent),
+      body: Column(children: <Widget>[
+        Category(Icon(Icons.add_alarm), "FIRST CAT", Colors.deepOrangeAccent),
+        Category(Icon(Icons.ac_unit), "SECOND CAT", Colors.deepOrangeAccent)
+      ]),
     ),
   ));
 }
-

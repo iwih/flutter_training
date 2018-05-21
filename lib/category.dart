@@ -16,12 +16,13 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.transparent,
       height: _height,
       padding: EdgeInsets.all(8.0),
       child: InkWell(
         highlightColor: _color,
         splashColor: Colors.lightBlueAccent,
-        borderRadius: BorderRadius.all( Radius.circular(_height / 2)),
+        borderRadius: BorderRadius.all(Radius.circular(_height / 2)),
         onTap: onTap,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
